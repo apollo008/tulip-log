@@ -2,12 +2,12 @@
 
 Tulip log是用C++语言实现的一个稳定高效的日志库。它不依赖与任何第三方库，主要应用于类Unix操作系统下。它具有以下优势：
 
-1. **性能稳定，代码精炼，无任何第三方依赖，运行效率高；**
-2. **兼顾一般常规的log配置文件选项，比如Java编写的log4j的配置格式，上手容易；**
-3. **支持多线程同步快速输出日志；**
-4. **支持多种日志输出方式，目前支持的有Console、File和Udp转发日志；**
-5. **对最常用的输出日志到文件的方式，支持文件名滚动和较多丰富细节特性定义；**
-6. **宏定义方式极大简化了日志接口使用，编写打印日志代码简要便利。**
+1. 性能稳定，代码精炼，无任何第三方依赖，运行效率高；
+2. 兼顾一般常规的log配置文件选项，比如Java编写的log4j的配置格式，上手容易；
+3. 支持多线程同步快速输出日志；
+4. 支持多种日志输出方式，目前支持的有Console、File和Udp转发日志；
+5. 对最常用的输出日志到文件的方式，支持文件名滚动和较多丰富细节特性定义；
+6. 宏定义方式极大简化了日志接口使用，编写打印日志代码简要便利。
 
 
 
@@ -78,8 +78,8 @@ tlog.appender.udpAppender.layout.LogPattern=[%%d] [%%t,%%F:%%n -- %%f() %%l] [%%
 目前支持类Unix环境下编译安装，方法如下：
 
 ```
-git clone https://github.com/apollo008/tulip.git tulip.git
-cd tulip.git
+git clone https://github.com/apollo008/tulip-log.git tulip-log.git
+cd tulip-log.git
 mkdir build-dir
 cd build-dir
 cmake -DCMAKE_INSTALL_PREFIX=/path/to/install  ../src
